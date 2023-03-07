@@ -433,8 +433,10 @@ img {
 .footer-container {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
-  gap: 120px;
+}
+
+.footer-logo-group {
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -454,6 +456,10 @@ img {
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+.footer-social-group {
+  margin-right: 80px;
 }
 
 .footer-social-title,
@@ -507,6 +513,8 @@ img {
 .footer-form-field {
   background: transparent;
   display: block;
+  min-width: 264px;
+  height: 40px;
   padding: 8px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -538,11 +546,11 @@ img {
 }
 
 .footer-form-btn {
-  display: block;
-  position: relative;
+  display: flex;
   min-width: 165px;
   min-height: 40px;
-  padding: 8px 64px 8px 24px;
+  padding: 8px 24px;
+  gap: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(24 / 16);
@@ -562,7 +570,6 @@ img {
 }
 
 .footer-form-icon {
-  position: absolute;
   top: 8px;
   right: 24px;
   fill: var(--white-color);
